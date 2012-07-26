@@ -58,7 +58,7 @@
 
 (define sum
   (lambda (l)
-    (reduce (lambda (x y)
+    (jm/reduce (lambda (x y)
               (+ x y)) l)))
 
 ;; exclusive range = 0...3
