@@ -11,8 +11,12 @@ I've only tested this with [Racket](http://racket-lang.org/), but this should
 work in other schemes (you might need to change `include` to `load` or
 `require` depending on what you're running).
 
+## Usage
+
+Run this in an interactive environment like GNU Emacs or DrRacket.
 
 ## Author
 
 Jon-Michael Deldin <dev@jmdeldin.com>
+
 Summer 2012
