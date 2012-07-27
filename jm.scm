@@ -56,10 +56,9 @@
       (aux (cdr l) ((eval f) acc (car l))))))
   (aux l 0))
 
-(define sum
-  (lambda (l)
-    (jm/reduce (lambda (x y)
-              (+ x y)) l)))
+;; tail-call optimized sum
+(define (jm/sum l)
+  (jm/reduce (lambda (x y) (+ x y)) l))
 
 ;; exclusive range = 0...3
 ;; (jm/range 0 3) => '(0 1 2)
