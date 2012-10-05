@@ -102,6 +102,14 @@
 (define (jm/reject f l)
   (jm/select (jm/negate f) l))
 
+;; (jm/reverse '(a b c))
+(define (jm/reverse lst)
+  (define (aux old new)
+    (if (null? old)
+        new
+        (aux (cdr old) (cons (car old) new))))
+  (aux lst '()))
+
 ;;; Silly functions
 (define square
   (lambda (x)
